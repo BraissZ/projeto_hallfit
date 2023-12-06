@@ -1,0 +1,16 @@
+{
+    "name": "wendel/projetohallfit",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Projetohallfit\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wendel dos Santos Costa",
+            "email": "wendelcosta997@gmail.com"
+        }
+    ],
+    "require": {}
+}
