@@ -1,31 +1,19 @@
 <?php
 declare(strict_types=1);
 
-use Hallfit\Controller\ErroController;
-use Hallfit\Controller\HomeController;
-use Hallfit\Controller\LoginController;
+use Hallfit\Core\Router;
 
 require __DIR__ . "/vendor/autoload.php";
 
 const PASTA_VIEW = "./app/View/";
+const NS_CONTROLLERS = "\\Hallfit\\Controller\\";
 
-$url = $_GET['url'] ?? "/";
+$url = $_GET['url'] ?? "";
 
-switch($url){
-    case "/":
-        $controller = new HomeController();
-        $controller->index();
-    break;
-    case "login":
-        $controller = new LoginController();
-        $controller->login();
-    break;
-    case "cadastro":
-        $controller = new LoginController();
-        $controller->criar_conta();
-    break;
-    default:
-        $controller = new ErroController();
-        $controller->erro404();
-        
-}
+
+Router::add('/','HomeController','index');
+Router::add('/login','LoginController','login');
+Router::add('/cadastro','LoginController','criar_conta');
+Router::add('__erro','ErroController','erro404');
+
+Router::exec($url);
