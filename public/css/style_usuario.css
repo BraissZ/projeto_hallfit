@@ -1,0 +1,326 @@
+@font-face {
+    font-family: "sensation";
+    src: url("font/Sansation_Regular.ttf") format(truetype),
+      url("font/Sansation_Regular.ttf") format(opentype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+   font-family: "sensation";
+   src: url("font/Sansation_Light.ttf") format(truetype),
+     url("font/Sansation_Light.ttf") format(opentype);
+   font-weight: light;
+   font-style: light;
+  }
+  
+  @font-face {
+   font-family: "sensation";
+   src: url("font/Sansation_Bold.ttf") format(truetype),
+     url("font/Sansation_Bold.ttf") format(opentype);
+   font-weight: bold;
+   font-style: bold;
+  }
+  @font-face{
+    font-family: "sansita";
+   src: url("font/Sansita-Bold.ttf") format(truetype),
+     url("font/Sansita-Bold.ttf") format(opentype);
+   font-weight: bold;
+   font-style: bold;
+  }
+
+
+*{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+
+    background-color: #FFF8F0;
+   
+}    
+
+/* Header */
+.image_logo_header{
+    width: 45px;
+}
+
+.logo_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header, .navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header{
+    border: 3px solid black;
+    box-shadow: 2px 2px 6px gray;
+    height: 3.5em;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+
+.nome_logo{
+    font-size: 10px;
+    
+}
+
+.navigation_header{
+    gap: 3em;
+}
+
+.navigation_header a{
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.active{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*Conteúdo*/
+
+input{
+    background-color: #FFF8F0;
+    padding: 20px 200px;
+    border-radius: 20px;
+    border: 3px solid black;
+    font-size: 20px;
+}
+
+.conteúdo_cadastro_busca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    margin: 100px 0.1%;
+}
+
+.conteúdo_cadastro_busca a{
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.imagens_conteúdo{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px;
+    margin: 0 18%;
+    margin-bottom: 10%;
+    background-color: #032208;
+    border-radius: 40px;
+}
+
+.imagens_conteúdo a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.imagens_conteúdo p{
+    margin: 0 30%;
+
+}
+
+.perfil_usuario{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: left;
+    padding-left: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 33px;
+
+}
+.perfiltexto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000;
+    font-family:  'sensation', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+}
+.boxperfil{
+    display: flex;
+    flex-direction: row;
+    margin-left: 500px;
+    width: 895.337px;
+    height: 218.228px;
+    background-color: rgb(95, 26, 55);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #FFF;
+    font-family: Sansation;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: normal;
+    font-family: 'sensation', Arial, Helvetica, sans-serif;
+}
+.avaliacoesfisicas{
+    margin-top: 50px;
+    width: 568.81px;
+    height: 50.732px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFF;
+    background: #032208;    
+    color: #FFF;
+    font-family: Sansita;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family:  'sansita', Arial, Helvetica, sans-serif;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #5f1a37;
+    width: fit-content;
+    border-radius: 15px;
+    margin-top: 50px;
+
+  }
+  .aval{
+    margin-left: 160px;
+    margin-top: 2px;
+  }
+  
+  .box-seta {
+    color: #fff8f0;
+    height: 100%;
+    font-size: 3em;
+    font-family: monospace;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box-conteudo {
+    border: 1px solid black;
+    background-color: #fff8f0;
+    padding: 30px;
+    width: 600px;
+    height: 150px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+   
+   
+
+
+  }
+  .btn-detail{
+    border-radius: 20px;
+    border: 0.6px solid #2B2264;
+    background: #FFF8F0;
+    cursor:pointer;
+    padding: 5px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #2B2264;
+    font-family: 'sensation', Arial, Helvetica, sans-serif;
+    
+  }
+  .boxavaliacoes{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxdata{
+    
+    margin-left: 500px;
+    padding-bottom: 50px;
+    width: 895.337px; 
+  }
+  
+  .container-box-textos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: #000;
+    line-height: 40px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    font-family: 'sensation', Arial, Helvetica, sans-serif;
+    
+  }
+
+
+  .titulo {
+    font-weight: bold;
+  }
+  
+  .conteudo {
+    padding-left: 10px;
+  }
+  
+  .box-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    background-color: #fff8f0;
+    border: 0.5px solid rgb(46, 46, 46);
+    border-radius: 5px;
+    font-weight: 300;
+  }
+/*Footer*/
+
+.rodape{
+    color: #FFFF;
+    text-align: center;
+    background-color: rgb(95, 26, 55);
+}
+
+#siga_gente{
+    padding-top: 35px;
+}
+.icons{
+    background-color: #FFF8F0;
+    border-radius: 20px;
+    margin: 65px 800px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cc{
+    font-size: 10px;
+    padding: 20px;
+}

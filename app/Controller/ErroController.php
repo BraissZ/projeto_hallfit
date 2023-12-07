@@ -14,10 +14,10 @@ class ErroController extends Controller{
                 $this->view('404');
             break;
             case "controller":
-                $this->view('erro',['msg' => 'Controller Não Existe']);
+                $this->view('erro',['msg' => 'Erro! Controller Não Existe']);
             break;
             case "metodo":
-                $this->view('erro',['msg' => 'O Método não existe no Controlador']);
+                $this->view('erro',['msg' => 'Erro! O Método não existe no Controlador']);
             break;
         }
 

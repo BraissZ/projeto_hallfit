@@ -1,7 +1,33 @@
-<?php componente('topo_cadastro')?>
-<form action="">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style_cadastro.css">
+    <link rel="shortcut icon" href="image/muscle.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Aluno</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+
+        <div class="logo_header">
+            <img src="image/logo/muscle.png" alt="Logo Músculo" class="image_logo_header">
+            <div class="nome_logo">
+                <h1>HALLFIT</h1>
+            </div>
+        </div>
+
+        <div class="navigation_header">
+            <a href="area_avaliador.html">HOME</a>
+            <a href="#">USUÁRIO</a>
+        </div>
+
+    </header>
+
+    <form action="">
         <div class="perfil_usuario">
-            <img src="<?=imgPng('perfil')?>" alt="logo html e css"> 
+            <img src="image/usuario/perfil.png" alt="logo html e css"> 
                 <div class="perfiltexto">
                         <p><b>Aluno(a):</b> Gabriella Pugliesi</p>
                         <p><b>Nascimento:</b> 25/08/1999
@@ -157,4 +183,24 @@
     </form>
     
     <button class="btnsave" type="submit">SALVAR PROGRESSO</button>
-    <?php componente('rodape')?>
+
+    <footer>
+        <div class="rodape">
+            <h1 id="siga_gente">SIGA A GENTE</h1>
+            <div class="icons">
+                <img src="image/logo/whatsApp.png" alt="Logo do WhatsApp em preto e branco" >
+                <img src="image/logo/instagram_logo.png" alt="Logo do Instagram em preto e branco">
+                <img src="image/logo/twitter_logo.png" alt="Logo do Twitter em preto e branco">
+            </div>
+            <img src="image/logo/muscle.png" alt="Musculo">
+            <h1>TREINE COM A GENTE</h1>
+
+            <p id="cc">TODOS OS DIREITOS RESERVADOS</p>
+        </div>
+        
+        
+
+    </footer>
+
+</body>
+</html>
