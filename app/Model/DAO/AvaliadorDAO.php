@@ -2,26 +2,17 @@
 
 namespace Hallfit\Model\DAO;
 
+use Hallfit\Core\DAO;
 use Hallfit\Core\Database;
+use Hallfit\Core\Entity;
 use Hallfit\Model\Entities\Avaliador;
 
-class AvaliadorDAO{
+class AvaliadorDAO extends DAO{
 
-    public function inserir(Avaliador $avaliador)
-    {
-        $db = new Database();
-        $sql = "INSERT INTO avaliador (nome,email,login,senha,tipo) VALUES (?,?,?,?,?)";
+    protected static string $tabela = "avaliador";
+    protected static string $classe = Avaliador::class;
 
-        $dados = [
-            $avaliador->nome,
-            $avaliador->email,
-            $avaliador->login,
-            $avaliador->senha,
-            $avaliador->tipo
-        ];
-
-        var_dump($db->execute($sql,$dados));
-    }
+    
 }
 
 

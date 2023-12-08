@@ -27,5 +27,19 @@ class Database{
         $this->stmt = $this->conexao->prepare($sql);
         return $this->stmt->execute($dados);
     }
+
+    public function getAll(string $classe) :array
+    {
+
+        return $this->stmt->fetchAll(\PDO::FETCH_CLASS,$classe);
+
+    }
+
+    public function get(string $classe)
+    {
+
+        return $this->stmt->fetchObject($classe);
+        
+    }
     
 }

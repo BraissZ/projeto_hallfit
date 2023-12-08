@@ -1,14 +1,24 @@
 <?php
 namespace Hallfit\Model\Entities;
 
+use Hallfit\Core\Entity;
 
-class Avaliador{
+class Avaliador extends Entity{
 
-    public int $id;
-    public string $nome;
-    public string $email;
-    public string $login;
-    public string $senha;
-    public int $tipo;
+    protected ?int $id;
+    protected ?string $nome;
+    protected ?string $email;
+    protected ?string $login;
+    protected ?string $senha;
+    protected ?int $tipo;
+
     
+
+    public function setSenha($valor)
+    {
+        $this->senha = password_hash($valor,PASSWORD_DEFAULT);
+    }
+
+     
+
 }
