@@ -1,4 +1,5 @@
 <?php componente('topo_login')?>
+<?=flash()?>
 <div class="area_login">
         <h1 id="login-texto">LOGIN</h1>
             <input type="text" placeholder="Usuario">
