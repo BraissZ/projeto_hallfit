@@ -4,7 +4,8 @@ namespace Hallfit\Controller;
 
 use Hallfit\Core\Controller;
 use Hallfit\Core\Database;
-use Hallfit\Model\Avaliador;
+use Hallfit\Model\DAO\AvaliadorDAO;
+use Hallfit\Model\Entities\Avaliador;
 
 class HomeController extends Controller{
     
@@ -16,8 +17,15 @@ class HomeController extends Controller{
 
     public function teste()
     {
-       $avaliador = new Avaliador();
+        $avaliador = new Avaliador();
+        $avaliador->nome = "Kaio";
+        $avaliador->email = "kaioribeiro389@gmail.com";
+        $avaliador->login = "kaio";
+        $avaliador->senha = "1234";
+        $avaliador->tipo = 1;
 
-       $avaliador->inserir( ['Tarcísio','joaotarcisio234@gmail.com','tarcisio','1234',1] );
+       $DAO = new AvaliadorDAO();
+
+       $DAO->inserir( $avaliador );
 }
 }

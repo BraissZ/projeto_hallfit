@@ -8,10 +8,13 @@ class Database{
 
     public function __construct()
     {
-        $servidor = "localhost";
-        $banco = "hallfit";
-        $avaliador = "root";
-        $senha = "";
+        $servidor = DB['servidor'];
+        $banco = DB['banco'];
+        $avaliador = DB['avaliador'];
+        $senha = DB['senha'];
+
+
+        
         $dsn = "mysql:host={$servidor};dbname={$banco}";
 
         $this->conexao = new \PDO($dsn,$avaliador,$senha);
